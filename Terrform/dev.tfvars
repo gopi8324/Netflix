@@ -43,7 +43,7 @@ security_group_info = {
       cidr        = "0.0.0.0/0"
       port        = 80
       protocol    = "tcp"
-      description = "open http"
+      description = "open http and also for netflix application "
     },
     {
       cidr        = "0.0.0.0/0"
@@ -56,6 +56,18 @@ security_group_info = {
       port        = 3000
       protocol    = "tcp"
       description = "open for npm"
+    },
+    {
+      cidr        = "0.0.0.0/0"
+      port        = 9000
+      protocol    = "tcp"
+      description = "open for sonar-qube"
+    },
+    {
+      cidr        = "0.0.0.0/0"
+      port        = 443
+      protocol    = "tcp"
+      description = "open for https"
     }
   ]
   outbound_rules   = []
